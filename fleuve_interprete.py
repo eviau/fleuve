@@ -14,9 +14,9 @@ class Bureau():
 
         while bureau.pointeur_lecture < len(bureau.programme):
             word = bureau.programme[bureau.pointeur_lecture]
-            print(word)
+            # print(word)
             self.read_word(word)
-            print(word)
+            # print(word)
             input("je suis ici")
         return
 
@@ -46,7 +46,7 @@ class Bureau():
             bureau.pointeur_lecture += 1
             value = bureau.programme[bureau.pointeur_lecture]
             if value in ("majestueux"):
-                print("le " + key + " est majestueux! quel redondance.")
+                print("le " + key + " est majestueux! quelle redondance.")
             elif value in ("pourpre","duo","effervescent"):
                 print("oui! c'est mieux. le " + key + " est " + value)
                 bureau.eau[key] = value
@@ -54,7 +54,7 @@ class Bureau():
                 print("deux c'est bon.")
                 bureau.eau[key] = value
             elif int(value) % 2 == 0:
-                print("mais non c'est incensé, il ne peut y en avoir autant!")
+                print("mais non c'est insensé, il ne peut y en avoir autant!")
             bureau.pointeur_lecture += 1
             return        
 
