@@ -5,6 +5,12 @@ class Bureau():
     def _reserved_words(self):
         return ["fleurs", "fruits", "eau","rose","tulipe","tournesol","pomme","melon","tournesol","lac", "etang", "ruisseau"]
 
+    def _user_reserved_words(self):
+        return self.user_defined
+    
+    def _user_reserved_words(self):
+        return self.fonctions.keys
+
     def __init__(self,program):
         self.programme = program.split()
         self.fleurs = {}
@@ -12,6 +18,7 @@ class Bureau():
         self.eau = {}
         self.pointeur_lecture = 0
         self.fonctions = {}
+        self.user_defined = ()
 
     def _next_pointeur(self):
         self.pointeur_lecture += 1
@@ -26,6 +33,7 @@ class Bureau():
     
     def _save_fleur(self,typ):
         name = self._get_next()
+        self.user_defined.append(name)
         value = self._get_next()
         print("vérifions... si cette fleur existe dans notre univers! ")
         while value in self._reserved_words():
@@ -38,6 +46,7 @@ class Bureau():
 
     def _save_fruit(self,typ):
         name = self._get_next()
+        self.user_defined.append(name)
         value = self._get_next()
         print("ce fruit, existe-t-il ?")
         while value in self._reserved_words():
@@ -49,6 +58,7 @@ class Bureau():
 
     def _save_eau(self,typ):
         name = self._get_next()
+        self.user_defined.append(name)
         value = self._get_next()
         while value in self._reserved_words():
             value = input("non, cette valeur, " + value + " est un mot réservé! recommencez en direct (j'attends): ")
@@ -56,6 +66,17 @@ class Bureau():
             name = input("désolé, ce nom: " + name + " est un mot réservé. recommencez en direct (j'attends): ")
         bureau.eau[name] = {typ: value}
         return name
+    
+    def _define_fct(self,fct):
+        char = self._get_next()
+        while char != ")":
+            # vérifier que char décrit un type de variable admissible
+
+            # entregistrer le nom de cette variable, pour cette instance
+
+            # enregistrer les actions à entreprendre....
+            pass
+
 
     def fleuve_interprete(self):
         while bureau.pointeur_lecture < len(bureau.programme):
@@ -110,11 +131,26 @@ class Bureau():
                 print("mais non c'est insensé, il ne peut y en avoir autant!")
                 self._next_pointeur()
             self._next_pointeur()
-            return   
+            return  
+        elif word == "propos":
+            fct = word
+            self._next_pointeur()
+            use_or_def = bureau.programme[bureau.pointeur_lecture]
+            if use_or_def == "(":
+                print("voici une autre façon de dire nos propos.")
+                self._define_fct(fct)
+        elif word in _user_reserved_propos():
+                print("vous avez oublié une parenthèse. la voici: ( " + use_or_def )
+                print("maintenant, examinons vos propos...")
+                self._use_fct(fct)
+                print("... et ceci conclut nos propos, parenthèse fermante incluse: )")
         else:
             print("ce mot... ne me dit rien. bonsoir.")
         self._next_pointeur()
-        return    
+        return   
+
+    def redire(word):
+        return print(word) 
 
 
 if __name__ == "__main__":
