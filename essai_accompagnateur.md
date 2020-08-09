@@ -55,13 +55,31 @@ Je n'affirme pas être la seule... et je suis toujours à la recherche de source
 
 ## le code comme oeuvre d'art à part entière
 
+"but you don't understand, code is only used to do things, it's not interesting in itself!"
+
+j'en doute. et je ne suis pas la seule...
+
 ## char stiles, manifesto livecoding
+
+voir le [manifesto de char stiles](http://charstiles.com/keystrokes/)
+
+en livecoding (programmation en direct, souvent artisitque mais pas que), on juge qu'il est essentiel que le développement informatique soit disponible à toutes les paires d'yeux qui y assistent.
+
+le code en soit est l'oeuvre. le code est intéressant.
 
 ## le langage comme poème en soit
 
+on pourrait appliquer ce principe au langage naturel ! le langage en soit comme poème. ses règles étudiées comme des oeuvres, sa structure vue à la lumière du jour, ses échafaudages tel quel - et non plus uniquement ce que l'on fait avec.
+
+l'outil non plus comme medium, mais comme oeuvre. (un peu comme magritte, mais pour la langue.)
+
 ## interprèter un programme comme on interprète une pièce de théâtre
 
+c'est un drôle de mot, interpréteur, pour un langage de programmation. alors poussons l'analogie: pourquoi pas interpréter un programme comme on interprète une pièce de théâtre ? pourquoi pas mettre en scène un programme ? je veux des programmes non-utilitaires, non-déterministes, des programmes qui sont des oeuvres en soit... et les mettre en scène.
+
 ## la mise-en-scène en programmation
+
+*pass* pour le moment.
 
 ## le langage naturel comme un langage de programmation d'êtres humains: voir le monde au travers les yeux d'un ordinateur
 
