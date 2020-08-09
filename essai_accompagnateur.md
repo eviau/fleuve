@@ -83,7 +83,16 @@ c'est un drôle de mot, interpréteur, pour un langage de programmation. alors p
 
 ## le langage naturel comme un langage de programmation d'êtres humains: voir le monde au travers les yeux d'un ordinateur
 
+comment les ordinateurs voient-ils le monde ? comprennent-ils les langues naturelles, humaines, comme des langages de programmation pour êtres humains ?
+
 ## pourquoi choisir une logique, quand on peut les avoir toutes ?
 
+pour mettre en place des ordinateurs fonctionnels, utiles, il a fallu choisir une logique.
 
+pour mettre en place un ordinateur innovant, créatif, peut-être faut-il choisir... toutes les logiques?
 
+pourquoi pas créer des programmes et des langages de programmation (qui sont la même chose, au final) qui soient fondamentalement différents, divorcés de notre monde ? pourquoi se restreindre aux choses qui font du sens pour les êtres humains ? pourquoi programme un ordinateur comme si c'était une personne très miticuleuse ?
+
+allons plus loin. explorons. plongeons.
+
+c'est mon roman... fleuve.
