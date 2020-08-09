@@ -27,12 +27,35 @@ class Bureau():
     def _save_fleur(self,typ):
         name = self._get_next()
         value = self._get_next()
-        if not(value in self._reserved_words()) and not(name in self._reserved_words()):
-            bureau.fleurs[name] = {typ: value}
-            self._next_pointeur()
-            return name
-        else:
-            print("la valeur " + value + " est un mot réservé! recommencez.")
+        print("vérifions... si cette fleur existe dans notre univers! ")
+        while value in self._reserved_words():
+            value = input("la valeur " + value + " est un mot réservé! recommencez en direct (j'attends) : ")
+        while name in self._reserved_words():
+            name = input("le nom " + name + " est un mot réservé! recommencez en direct (j'attends) : ")
+            
+        bureau.fleurs[name] = {typ: value}            
+        return name        
+
+    def _save_fruit(self,typ):
+        name = self._get_next()
+        value = self._get_next()
+        print("ce fruit, existe-t-il ?")
+        while value in self._reserved_words():
+            value = input("non, cette valeur, " + value + " est un mot réservé! recommencez en direct (j'attends): ")
+        while name in self._reserved_words():
+            name = input("désolée, ce nom: " + name + " est un mot réservé. recommencez en direct (j'attends): ")
+        bureau.fruits[name] = {typ: value}
+        return name
+
+    def _save_eau(self,typ):
+        name = self._get_next()
+        value = self._get_next()
+        while value in self._reserved_words():
+            value = input("non, cette valeur, " + value + " est un mot réservé! recommencez en direct (j'attends): ")
+        while name in self._reserved_words():
+            name = input("désolé, ce nom: " + name + " est un mot réservé. recommencez en direct (j'attends): ")
+        bureau.eau[name] = {typ: value}
+        return name
 
     def fleuve_interprete(self):
         while bureau.pointeur_lecture < len(bureau.programme):
@@ -47,48 +70,51 @@ class Bureau():
 
     def read_word(self,word):
         if word in ("rose", "tulipe","tournesol"):
+            print("le mot est: " + word)
             key = word
             self._next_pointeur()
             typ = bureau.programme[bureau.pointeur_lecture]
-            if typ in ("bleu, jaune, rouge") or (type(typ) is int and (int(typ) % 2) == 0):
+            if typ in ("bleu, jaune, rouge") or (int(typ) % 2) == 0:
                 name = self._save_fleur(typ)
                 print("je confirme ! la fleur est une " + key + " la fleur est " + typ + " son nom est " + name + " et sa valeur est " + bureau.fleurs[name][typ] + ".")
             else:
                 print("ceci n'est une fleur. continuons.")
-                self._next_pointeur()
+            self._next_pointeur()
             return      
 
         elif word in ("pomme", "melon", "tomate"):
             key = word
             self._next_pointeur()
-            name = bureau.programme[bureau.pointeur_lecture]
-            if name in ("amer", "extreme") or (int(name) % 2) == 0:
-                bureau.fruits[key] = name
-                self._next_pointeur()
-                print("le fruit est " + name + " c'est un fruit d'un drôle de genre, c'est une " + key)
+            typ = bureau.programme[bureau.pointeur_lecture]
+            if typ in ("amer", "extreme") or (int(typ) % 2) == 0:
+                name = self._save_fruit(typ)
+                print("le fruit est " + name + " c'est un fruit d'un drôle de genre, c'est une " + bureau.fruits[name][typ])
+            else:
+                print("est-ce un fruit ? bien non. suivant !")
+            self._next_pointeur()
             return     
 
         elif word in ("lac", "etang", "ruisseau"):
             key = word
             self._next_pointeur()
-            name = bureau.programme[bureau.pointeur_lecture]
-            if name in ("majestueux"):
+            typ = bureau.programme[bureau.pointeur_lecture]
+            if typ in ("majestueux"):
                 print("le " + key + " est majestueux! quelle redondance.")
-            elif name in ("pourpre","duo","effervescent"):
-                print("oui! c'est mieux. le " + key + " est " + name)
-                bureau.eau[key] = name
-            elif name == 2:
+            elif typ in ("pourpre","duo","effervescent"):
+                print("oui! c'est mieux. " + key + " est " + typ)
+                name = self._save_eau(typ)
+            elif typ == 2:
                 print("deux c'est bon.")
-                bureau.eau[key] = name
-            elif int(name) % 2 == 0:
+                name = self._save_eau(typ)
+            elif int(typ) % 2 == 0:
                 print("mais non c'est insensé, il ne peut y en avoir autant!")
+                self._next_pointeur()
             self._next_pointeur()
-            return    
+            return   
         else:
-            print("c'est la fin de ce poème. bonsoir.")
-            self._next_pointeur()
-
-            return    
+            print("ce mot... ne me dit rien. bonsoir.")
+        self._next_pointeur()
+        return    
 
 
 if __name__ == "__main__":
