@@ -36,3 +36,7 @@ dans `fleuve_rules.md` se trouve les règles, écrites en français, du langage 
 
 dans `essai_acompagnateur.md` se trouve une explication plus claire du projet, ainsi que des références et des ressources. c'est un peu brouillon mais on s'y retrouve.
 
+## contact
+
+vous pouvez ouvrir une issue, ou m'écrire un [courriel](fleuve.programmation@gmail.com).
+

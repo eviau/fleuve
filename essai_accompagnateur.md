@@ -49,7 +49,9 @@ est-ce que l'esperanto est une oeuvre d'art ? si vous me demandez mon avis, je n
 
 ## esolangs
 
-l'idée qui m'intéresse englobe les esolangs mais les *expand* ( étend ): 
+l'idée qui m'intéresse englobe les esolangs mais les *expand* ( étend ): je ne m'intéresse pas uniquement aux langages de programmation farfelus qui repousse les limites de la programmation. Je m'intéresse aux langages de programmation qui repoussent les limites des structures des langues, naturelles ou artificielles ou de programmation ou autre. Je m'intéresse aux langages de programmation comme outil linguistique.
+
+Je n'affirme pas être la seule... et je suis toujours à la recherche de sources pertinentes et de pistes de réflexion à ce sujet. N'hésitez pas à me contacter pour m'en faire part, par Issue sur GitHub ou par Pull Request ou [courriel](fleuve.programmation@gmail.com).
 
 ## le code comme oeuvre d'art à part entière
 
