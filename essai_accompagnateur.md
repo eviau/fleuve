@@ -65,7 +65,7 @@ voir le [manifesto de char stiles](http://charstiles.com/keystrokes/)
 
 en livecoding (programmation en direct, souvent artisitque mais pas que), on juge qu'il est essentiel que le développement informatique soit disponible à toutes les paires d'yeux qui y assistent.
 
-le code en soit est l'oeuvre. le code est intéressant.
+le code en soit est l'oeuvre. le code est intéressant. [je ne suis pas la seule qui le pense](http://www.cs.uni.edu/~wallingf/blog/archives/monthly/2015-01.html#e2015-01-16T14_59_08.htm)
 
 ## le langage comme poème en soit
 
@@ -80,6 +80,8 @@ c'est un drôle de mot, interpréteur, pour un langage de programmation. alors p
 ## la mise-en-scène en programmation
 
 *pass* pour le moment.
+
+[peut-être ceci?](http://anaximandrake.blogspirit.com/archive/2012/11/19/nervus-probandi.html)
 
 ## le langage naturel comme un langage de programmation d'êtres humains: voir le monde au travers les yeux d'un ordinateur
 

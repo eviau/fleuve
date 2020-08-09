@@ -1,0 +1,1 @@
+https://revistas.ucp.pt/index.php/jsta/article/view/7297
