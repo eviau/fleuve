@@ -1,8 +1,12 @@
 # fleuve - un langage de programmation personnalisé
 
+*But it is the software that gives the orders, acting on the outside world and on machines that exist only as functions of software and evolve so that they can work out ever more complex programs.*
+
+- Italo Calvino, Six Memos for the Next Millennium (1988) , "Lightness" English translation: Patrick Creagh (1996).
+
 fleuve est peut-être un langage de programmation, mais il n'est pas décidé à l'être. c'est un langage qui est un peu comme un journal personnel, un peu comme une langue secrète, et peut-être rien de tout cela.
 
-fleuve s'interprète parfois mais ne se compile rarement.
+fleuve s'interprète parfois mais ne se compile que rarement.
 
 fleuve est ailleurs.
 

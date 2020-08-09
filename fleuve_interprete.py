@@ -10,6 +10,9 @@ class Bureau():
         self.pointeur_lecture = 0
         self.fonctions = {}
 
+    def _next_pointeur(self):
+        self.pointeur_lecture += 1
+
     def fleuve_interprete(self):
 
         while bureau.pointeur_lecture < len(bureau.programme):
@@ -23,27 +26,27 @@ class Bureau():
     def read_word(self,word):
         if word in ("rose", "tulipe","tournesol"):
             key = word
-            bureau.pointeur_lecture += 1
+            self._next_pointeur()
             value = bureau.programme[bureau.pointeur_lecture]
             if value in ("bleu, jaune, rose") or (int(value) % 2) == 0:
                 bureau.fleurs[key] = value
-                bureau.pointeur_lecture += 1
+                self._next_pointeur()
                 print("la fleur est une " + key + " la fleur est " + value)
             return      
 
         elif word in ("pomme", "melon", "tomate"):
             key = word
-            bureau.pointeur_lecture += 1
+            self._next_pointeur()
             value = bureau.programme[bureau.pointeur_lecture]
             if value in ("amer", "extreme") or (int(value) % 2) == 0:
                 bureau.fruits[key] = value
-                bureau.pointeur_lecture += 1
+                self._next_pointeur()
                 print("le fruit est " + value + " c'est un fruit d'un drôle de genre, c'est une " + key)
             return     
 
         elif word in ("lac", "etang", "ruisseau"):
             key = word
-            bureau.pointeur_lecture += 1
+            self._next_pointeur()
             value = bureau.programme[bureau.pointeur_lecture]
             if value in ("majestueux"):
                 print("le " + key + " est majestueux! quelle redondance.")
@@ -55,7 +58,7 @@ class Bureau():
                 bureau.eau[key] = value
             elif int(value) % 2 == 0:
                 print("mais non c'est insensé, il ne peut y en avoir autant!")
-            bureau.pointeur_lecture += 1
+            self._next_pointeur()
             return        
 
 
