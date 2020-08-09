@@ -28,3 +28,11 @@ fleuve n'est pas pour une utilisation industrielle, ou commerciale, ou quoique c
 
 commençons l'écriture de fleuve. pour le moment, écrivons-le en Python.
 
+## index du repo fleuve
+
+dans `fleuve_interprete.py` se trouve les règles, telles que décrites en Python, du langage fleuve.
+
+dans `fleuve_rules.md` se trouve les règles, écrites en français, du langage fleuve.
+
+dans `essai_acompagnateur.md` se trouve une explication plus claire du projet, ainsi que des références et des ressources. c'est un peu brouillon mais on s'y retrouve.
+

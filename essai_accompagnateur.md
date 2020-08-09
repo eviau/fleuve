@@ -7,7 +7,7 @@ bear with me // ours avec moi, je ne fais que débuter...
 
 première définition: un langage qui peut transmettre des instructions à un ordinateur.
 
-alors, quelle est la différence entre un programme qui n'est pas un langage de programmation, et un programme qui est un langage de programmation ?
+alors, quelle est la différence entre un programme qui n'est pas un langage de programmation, et un programme qui est un langage de programmation ? est-ce la possibilité de créer des variables ? des fonctions ?
 
 ## mais alors, qu'est-ce qu'un ordinateur ?
 
@@ -45,9 +45,11 @@ est-ce que le klingon est une oeuvre d'art ? on pourrait maintenant différencie
 
 ## définir des langages virtuels, artificiels
 
-
+est-ce que l'esperanto est une oeuvre d'art ? si vous me demandez mon avis, je ne parle ni ne lis l'esperanto mais oui, c'en est une.
 
 ## esolangs
+
+l'idée qui m'intéresse englobe les esolangs mais les *expand* ( étend ): 
 
 ## le code comme oeuvre d'art à part entière
 
