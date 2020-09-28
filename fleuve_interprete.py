@@ -8,7 +8,7 @@ class Bureau():
     def _user_reserved_words(self):
         return self.user_defined
     
-    def _user_reserved_words(self):
+    def _user_defined_fcts(self):
         return self.fonctions.keys
 
     def __init__(self,program):
@@ -18,7 +18,7 @@ class Bureau():
         self.eau = {}
         self.pointeur_lecture = 0
         self.fonctions = {}
-        self.user_defined = ()
+        self.user_defined = []
 
     def _next_pointeur(self):
         self.pointeur_lecture += 1
@@ -68,14 +68,28 @@ class Bureau():
         return name
     
     def _define_fct(self,fct):
+        print("alors, définissons cette fonction...")
         char = self._get_next()
+        print("nous en sommes à " + char )
+        signature = ""
+        
+        while char != ';':
+            signature = signature + char
+            char = self._get_next()
+            print(char)
+
+        body = ""
+
         while char != ")":
-            # vérifier que char décrit un type de variable admissible
+            body = body + char
+            char = self._get_next()
 
-            # entregistrer le nom de cette variable, pour cette instance
 
-            # enregistrer les actions à entreprendre....
-            pass
+        self.fonctions[fct] = {"sign" : signature, "body" : body}
+
+        print(self.fonctions)
+
+            
 
 
     def fleuve_interprete(self):
@@ -133,13 +147,15 @@ class Bureau():
             self._next_pointeur()
             return  
         elif word == "propos":
-            fct = word
+            print("c'est une fonction!")
+            fct = self._get_next()
+            print(fct)
             self._next_pointeur()
             use_or_def = bureau.programme[bureau.pointeur_lecture]
             if use_or_def == "(":
                 print("voici une autre façon de dire nos propos.")
                 self._define_fct(fct)
-        elif word in _user_reserved_propos():
+        elif word in self.fonctions.keys():
                 print("vous avez oublié une parenthèse. la voici: ( " + use_or_def )
                 print("maintenant, examinons vos propos...")
                 self._use_fct(fct)

@@ -15,5 +15,5 @@ dans fleuve, il est possible que les choses soient indécidables.
 
 ### les synonymes
 
-fleuve possède une fonction qui cherche, dans le corpus des fonctions déjà déclarées par l'utilisateur, cherche les fonctions ayant la même signature que la fonction utilisée, en choisie une au hasard et la remplace par celle-ci, sans demander quoique ce soit à l'utilisateur.
+fleuve possède une fonction qui cherche, dans le corpus des fonctions déjà déclarées par l'utilisateur, les fonctions ayant la même signature que la fonction utilisée, en choisie une au hasard et la remplace par celle-ci, sans demander quoique ce soit à l'utilisateur.
 
