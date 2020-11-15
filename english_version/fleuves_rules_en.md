@@ -1,3 +1,5 @@
+*rough translation of the `fleuve_rules.md` doc*
+
 # fleuve - a few rules
 
 ## rules that were implemented

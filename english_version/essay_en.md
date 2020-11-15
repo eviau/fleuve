@@ -1,3 +1,5 @@
+*rough translation of the doc `essai_accompagnateur`*
+
 # essay: what is a programming language?
 
 *where I am vaguely thinking*

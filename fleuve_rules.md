@@ -1,6 +1,5 @@
 # fleuve - quelques règles non-exhaustives
 
-
 ## implémentés
 
 ### les types
