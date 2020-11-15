@@ -1,3 +1,5 @@
+*15 nov 2020* : [english version of this texts, the rules of fleuve and the essay](https://github.com/eviau/fleuve/blob/main/english_version)
+
 # fleuve - un langage de programmation personnalisé
 
 *But it is the software that gives the orders, acting on the outside world and on machines that exist only as functions of software and evolve so that they can work out ever more complex programs.*
